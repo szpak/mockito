@@ -1,6 +1,6 @@
 # When modifying you validate the structure of this file offline with travis-lint
 # gem install travis-lint
-# travis-lint .travis.yml	
+# travis-lint .travis.yml
 
 
 language: java
@@ -21,8 +21,8 @@ before_install:
 install:
     - true
 
-script: 
-    - gradle build
+script:
+    - gradle build --stacktrace
 
 after_success:
     - gradle cobertura
