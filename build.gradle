@@ -49,7 +49,12 @@ sourceSets {
     }
 }
 
-test.include "**/*Test.class"
+test {
+    include '**/*Test.class'
+    testLogging.showStackTraces = true
+    testLogging.showCauses = true
+    testLogging.exceptionFormat = 'full'
+}
 
 tasks.withType(Compile) {
     options.warnings = false
