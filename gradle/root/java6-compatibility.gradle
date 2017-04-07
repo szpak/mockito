@@ -8,6 +8,7 @@ if (project.hasProperty('checkJava6Compatibility') && !System.getenv("SKIP_RELEA
             p.dependencies {
                 signature 'org.codehaus.mojo.signature:java16:1.0@signature'
             }
+            p.animalsniffer { incremental = true }
         }
     }
 }

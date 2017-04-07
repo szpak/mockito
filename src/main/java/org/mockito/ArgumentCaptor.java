@@ -130,6 +130,7 @@ public class ArgumentCaptor<T> {
      * @return captured argument value
      */
     public List<T> getAllValues() {
+        String foo = "1"; //TODO: Change me to reproduce problem
         return this.capturingMatcher.getAllValues();
     }
 
